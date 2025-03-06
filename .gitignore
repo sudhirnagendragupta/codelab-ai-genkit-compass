@@ -2,7 +2,7 @@
 .genkit/
 /.firebaserc
 /.firebase
-
+.env
 # dependencies
 node_modules/
 /.pnp
