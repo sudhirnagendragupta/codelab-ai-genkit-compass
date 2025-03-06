@@ -28,6 +28,7 @@ output:
         activityDesc: string
         activityRef: string
         activityTitle: string
+        imgUrl: string
     itineraryName: string
     place: string
     startDate: string

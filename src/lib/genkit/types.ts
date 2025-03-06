@@ -67,8 +67,6 @@ const Itinerary = z.object({
   day: z.number(),
   date: z.string(),
   planForDay: z.array(DayActivity),
-  activityRef: z.string(),
-  imgUrl: z.string(),
 });
 
 export type Itinerary = z.infer<typeof Itinerary>;

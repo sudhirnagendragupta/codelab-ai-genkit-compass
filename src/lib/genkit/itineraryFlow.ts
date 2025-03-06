@@ -76,7 +76,8 @@ export const itineraryFlow = ai.defineFlow(
   },
 
   async (tripDetails) => {
-    const imgDescription = '';
+    const imgDescription = `Imagine waking up to the sight of a sparkling river flowing through a bustling city, the iconic tower standing tall in the distance. As you stroll along the cobblestone streets,
+    you'll be greeted by charming cafes with outdoor seating, where you can savor a cup of coffee and people - watch. You'll be captivated by the history and architecture that surrounds you, from grand palaces to charming boutiques. And when the sun sets, the city transforms into a magical wonderland, with twinkling lights illuminating the river and the tower glowing brightly. This is a place where you can lose yourself in the beauty of the moment, where romance and adventure are just around the corner. `;
     // TODO: 2. Replace the line above with this:
     // const imgDescription = await run('imgDescription', async () => {
     //   if (!tripDetails.imageUrls?.length) {
