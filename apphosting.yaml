@@ -2,3 +2,40 @@
 runConfig:
   minInstances: 0
   maxInstances: 2
+
+# Environment variables and secrets
+env:
+  # Non-sensitive configuration
+  - variable: FIREBASE_PROJECT_ID
+    value: compass-codelab-7ce2f
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: FIREBASE_AUTH_DOMAIN
+    value: compass-codelab-7ce2f.firebaseapp.com
+    availability:
+      - BUILD
+      - RUNTIME
+      
+  - variable: FIREBASE_STORAGE_BUCKET
+    value: compass-codelab-7ce2f.firebasestorage.app
+    availability:
+      - BUILD
+      - RUNTIME
+      
+  - variable: VERTEXAI_LOCATION
+    value: us-central1
+    availability:
+      - BUILD
+      - RUNTIME
+
+  # Sensitive information stored in Secret Manager
+  - variable: FIREBASE_API_KEY
+    secret: firebase-api-key
+    
+  - variable: FIREBASE_MESSAGING_SENDER_ID
+    secret: firebase-messaging-sender-id
+    
+  - variable: FIREBASE_APP_ID
+    secret: firebase-app-id
